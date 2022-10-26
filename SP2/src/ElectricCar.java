@@ -60,7 +60,7 @@ public class ElectricCar extends ACar
     {
         return super.toString() + "\n This is an electric car." +
                 "\n It has a battery capacity of: " + batteryCapacityKWH + " kWh." +
-                "It has a maximum range of: " + maxRange + " km.";
+                "It has a maximum range of: " + maxRange + " km.\n";
     }
 
 }

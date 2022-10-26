@@ -105,11 +105,11 @@ public class DieselCar extends AFuelCar
     {
         if(hasFilter == true)
         {
-            return super.toString()+ "\n It is a diesel car with a particle filter.";
+            return super.toString()+ "\n It is a diesel car with a particle filter.\n";
         }
         else
         {
-            return super.toString()+ "\n It is a diesel car with no particle filter!";
+            return super.toString()+ "\n It is a diesel car with no particle filter!\n";
         }
 
     }

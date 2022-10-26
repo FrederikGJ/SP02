@@ -39,6 +39,6 @@ public class GasolineCar extends AFuelCar
     @Override
     public String toString()
     {
-        return super.toString() + "\n It is a gasoline car.";
+        return super.toString() + "\n It is a gasoline car.\n";
     }
 }
