@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.awt.*;
+
 public class Main
 {
      public static FleetOfCars carFleet = new FleetOfCars();
@@ -23,7 +26,6 @@ public class Main
         carFleet.addCar(car2);
         carFleet.addCar(car3);
 
-
         carFleet.addCar(car4);
         carFleet.addCar(car5);
         carFleet.addCar(car6);
@@ -38,5 +40,26 @@ public class Main
         System.out.println();
 
         System.out.println(carFleet.TotalRegistrationFeeForFleet());
+
+        window();
     }
+
+    public static void window()
+    {
+            JLabel label = new JLabel(" Du skal betale: "
+                    + Integer.toString(carFleet.TotalRegistrationFeeForFleet())
+                    + " i registreringsafgifter til SKAT",
+                    (int) JFrame.CENTER_ALIGNMENT);
+            label.setFont(new Font("ITALIC", Font.BOLD, 25));
+
+           JFrame frame = new JFrame();
+           frame.setVisible(true);
+           frame.setSize(800,600);
+           frame.setTitle("Betaling til SKAT");
+           frame.getContentPane().setBackground(Color.orange);
+           frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           frame.add(label);
+
+    }
+
 }
