@@ -6,7 +6,6 @@ public class DieselCar extends AFuelCar
     {
         super(registrationNumber, make, model, numberOfDoors, kilometerPerLiter);
         this.hasFilter = hasFilter;
-
     }
 
     @Override

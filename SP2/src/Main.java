@@ -44,6 +44,8 @@ public class Main
         window();
     }
 
+
+    //I have made a windoe that shows what the company ows in tax
     public static void window()
     {
             JLabel label = new JLabel(" Du skal betale: "
