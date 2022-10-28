@@ -16,25 +16,25 @@ public abstract class ACar implements Car
     @Override
     public String getRegistrationNumber()
     {
-        return null;
+        return registrationNumber;
     }
 
     @Override
     public String getMake()
     {
-        return null;
+        return make;
     }
 
     @Override
     public String getModel()
     {
-        return null;
+        return model;
     }
 
     @Override
     public int getNumberOfDoors()
     {
-        return 0;
+        return numberOfDoors;
     }
 
     @Override
